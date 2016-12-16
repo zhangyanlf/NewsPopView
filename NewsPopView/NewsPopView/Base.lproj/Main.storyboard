@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="oaP-I0-C8R">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--开心麻花-->
+        <scene sceneID="EW2-k3-Ni2">
+            <objects>
+                <viewController id="e5j-P3-3PM" customClass="PopViewTableViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uYx-dD-azm"/>
+                        <viewControllerLayoutGuide type="bottom" id="uxQ-O5-gAz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UFE-Rr-DYz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="开心麻花" id="4TO-ua-A6x"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X3f-Hz-qZe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1000.8" y="-112.89355322338831"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Nmn-Kv-sxm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oaP-I0-C8R" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2oG-zk-qEf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="e5j-P3-3PM" kind="relationship" relationship="rootViewController" id="TD4-nK-3Zu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2HV-xl-twp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61.600000000000001" y="-112.89355322338831"/>
+        </scene>
+    </scenes>
+</document>

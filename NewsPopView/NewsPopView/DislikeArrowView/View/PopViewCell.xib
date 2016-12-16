@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="newsCell" rowHeight="90" id="KGk-i7-Jjw" customClass="PopViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新闻标题显示内容新闻标题显示内容" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oz6-oe-dMY">
+                        <rect key="frame" x="15" y="15" width="290" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="jFb-HE-PWO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-12-05" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3h4-tT-kng">
+                        <rect key="frame" x="15" y="63" width="68" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="t8t-cF-UrP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qw5-ek-bGG">
+                        <rect key="frame" x="265" y="51" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="5go-Rw-TuF"/>
+                            <constraint firstAttribute="width" constant="40" id="Wrs-Gq-0ZJ"/>
+                        </constraints>
+                        <inset key="contentEdgeInsets" minX="0.0" minY="2" maxX="-19" maxY="0.0"/>
+                        <state key="normal" image="close-xzqy"/>
+                        <connections>
+                            <action selector="closeButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="cPf-s7-yOy"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qw5-ek-bGG" firstAttribute="top" secondItem="oz6-oe-dMY" secondAttribute="bottom" constant="15" id="22P-0R-xXb"/>
+                    <constraint firstAttribute="trailing" secondItem="oz6-oe-dMY" secondAttribute="trailing" constant="15" id="7hz-Jz-Re7"/>
+                    <constraint firstItem="3h4-tT-kng" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="E7e-RH-lww"/>
+                    <constraint firstItem="oz6-oe-dMY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="ITq-c4-4BP"/>
+                    <constraint firstItem="oz6-oe-dMY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="QQr-v7-3Lk"/>
+                    <constraint firstItem="qw5-ek-bGG" firstAttribute="centerY" secondItem="3h4-tT-kng" secondAttribute="centerY" id="duO-bn-qHu"/>
+                    <constraint firstAttribute="trailing" secondItem="qw5-ek-bGG" secondAttribute="trailing" constant="15" id="ubg-Kq-aBz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="closeButton" destination="qw5-ek-bGG" id="mx8-c4-9Dj"/>
+                <outlet property="newsData" destination="3h4-tT-kng" id="9lX-dB-yl5"/>
+                <outlet property="titleLabel" destination="oz6-oe-dMY" id="k2p-se-TiX"/>
+            </connections>
+            <point key="canvasLocation" x="-58" y="-42"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="close-xzqy" width="18" height="18"/>
+    </resources>
+</document>
